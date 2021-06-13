@@ -7,7 +7,7 @@ const createError = require('http-errors');
 
 mongoose.Promise = global.Promise;
 mongoose.set('useCreateIndex', true);
-mongoose.connect('mongodb://localhost:27017/admin',
+mongoose.connect('mongodb://localhost:27017/alias',
   {
     useUnifiedTopology: true,
     useNewUrlParser: true,

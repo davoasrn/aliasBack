@@ -10,4 +10,11 @@ userRouter.get('/', async (ctx, next) => {
   return next(ctx);
 });
 
+userRouter.get('/', async (ctx, next) => {
+  ctx.data = { name: 'George' };
+  ctx.status = 200;
+  return next(ctx);
+});
+
+
 module.exports = userRouter.routes();
